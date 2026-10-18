@@ -1,0 +1,26 @@
+{
+  "name": "salon-management-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "seed:logins": "node scripts/seedDemoAccounts.js",
+    "migrate:drop-customer-index": "node scripts/dropCustomerIdIndex.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.11.0",
+    "morgan": "^1.10.0",
+    "salon-management-server": "file:"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^11.1.0",
+    "nodemon": "^3.1.9"
+  }
+}
